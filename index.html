@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reginald Osakue Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dc158b66fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/newLogo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#conact">Contect</a></li>
+            <i class="fas fa-square-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi,I'm <span>Reginald Osakue</span><br />
+            from Atlanta, GA
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Reggie.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Soon-to-be grad with a Bachelor of Science in Computer Science
+              (Dec 2022). Atlanta Native, with a passion for creating content
+              and developing new technology. I have experience in Information
+              technology and hope to work as a full-stack software engineer in
+              the future. Throughout my life, I’ve had a love of art and
+              technology. Software engineering provides me with the express
+              both.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Java, Python, JavaScript, MySQL,
+                  SQLite, PHP, HTML, CSS
+                </li>
+                <li>
+                  <span>Tools</span><br />Git, Bash, Visual Studio Code, Android
+                  App Studio, XCode
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>IT Technician </span><br />Healthsource Agency |
+                  Stockbridge, GA May 2019 – August 2022
+                </li>
+                <li>
+                  <span>Mathematics/CS Tutor</span><br />
+                  October 2020 – May 2022
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>August 2018-December 2022</span><br /><strong>
+                    Georgia State University</strong
+                  ><br />Bachelor of Science in Computer Science, Major GPA:
+                  3.6/4.0 <br />Related Coursework: Data structures, Operating
+                  Systems, Mobile app development, Software engineering, Web
+                  programing, Computer Networks, Programing Languages,
+                  Object-Oriented Programming, Algorithm Design & Analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------portfolio---------- -->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connect you to talented people around the world</p>
+                <a href="#"
+                  ><i class="fa-thin fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" />
+              <div class="layer">
+                <h3>Online Shopping website</h3>
+                <p>The app connect you to talented people around the world</p>
+                <a href="#"
+                  ><i class="fa-thin fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" />
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>The app connect you to talented people around the world</p>
+                <a href="#"
+                  ><i class="fa-thin fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- --------------contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> reginaldosakue@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>678-216-6439</p>
+            <div class="social-icons">
+              <a href="https://github.com/Reggiezu"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/reginald-osakue/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/Reginald_Osakue_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Reginald Osakue</p>
+      </div>
+    </div>
+
+    <!-- ------------script-------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
